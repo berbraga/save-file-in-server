@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop de Arquivos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="folder-input">
+            <label for="folderPath">Pasta de destino:</label>
+            <input type="text" id="folderPath" placeholder="Digite o caminho da pasta (ex: /mnt)">
+        </div>
+        <div class="drop-zone" id="dropZone">
+            <div class="drop-zone-content">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/%3E%3Cpolyline points='17 8 12 3 7 8'/%3E%3Cline x1='12' y1='3' x2='12' y2='15'/%3E%3C/svg%3E" alt="Upload">
+                <p>Arraste e solte arquivos aqui</p>
+                <p>ou</p>
+                <input type="file" id="fileInput" multiple hidden>
+                <button class="select-files-btn">Selecionar Arquivos</button>
+            </div>
+        </div>
+        <div class="preview-container" id="previewContainer"></div>
+        <button id="saveButton" class="save-btn">Salvar Imagens</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
